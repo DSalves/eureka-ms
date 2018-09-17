@@ -75,6 +75,7 @@
 				<configuration>
 					<imageName>eureka-ms</imageName>
 					<baseImage>openjdk:8-jdk-alpine</baseImage>
+					<exposes>8761</exposes>
 					<entryPoint> ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/${project.build.finalName}.jar"]
 					</entryPoint>
 					<resources>
